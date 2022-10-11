@@ -1,81 +1,16 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:web/home.dart';
+
+import 'login.dart';
 
 void main(List<String> args) {
   runApp(
     MaterialApp(
       //color: Color.fromARGB(255, 138, 183, 221),
-      home: Scaffold(
-        backgroundColor: Color.fromARGB(255, 130, 130, 255),
-        body: Center(
-          child: Container(
-            height: 400,
-            width: 300,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(8),
-              color: Color.fromARGB(255, 255, 255, 255),
-            ),
-            child: Logg(),
-          ),
-        ),
-      ),
+      initialRoute: '/',
+      routes: {'/': ((context) => Login())},
     ),
   );
-}
-
-class Logg extends StatefulWidget {
-  const Logg({super.key});
-
-  @override
-  State<Logg> createState() => _LoggState();
-}
-
-class _LoggState extends State<Logg> {
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.all(20),
-      child: Center(
-        child: Column(
-          // mainAxisAlignment: MainAxisAlignment.center,
-          // crossAxisAlignment: CrossAxisAlignment.stretch,
-
-          children: <Widget>[
-            Image.asset(
-              'assets/image/anima1.gif',
-              height: 150,
-              width: 150,
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            TextFormField(
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                label: Text("E-mail"),
-              ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            TextFormField(
-              cursorHeight: 30,
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                label: Text("Password"),
-              ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            ElevatedButton(
-              onPressed: () {},
-              child: Text("Entrar"),
-            )
-          ],
-        ),
-      ),
-    );
-  }
 }
