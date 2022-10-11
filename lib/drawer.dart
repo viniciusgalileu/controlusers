@@ -24,7 +24,10 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(title)),
+      appBar: AppBar(
+        title: Text(title),
+        backgroundColor: Color.fromARGB(255, 1, 39, 70),
+      ),
       body: const Center(),
       drawer: Drawer(
         // Add a ListView to the drawer. This ensures the user can scroll
@@ -36,9 +39,12 @@ class MyHomePage extends StatelessWidget {
           children: [
             const DrawerHeader(
               decoration: BoxDecoration(
-                color: Color.fromARGB(255, 139, 203, 255),
+                color: Color.fromARGB(255, 1, 39, 70),
               ),
-              child: Text('Drawer Header'),
+              child: Text(
+                'Mostra aqui o nome do usuário',
+                style: TextStyle(color: Colors.white),
+              ),
             ),
             ListTile(
               title: const Text('Lista usuários'),

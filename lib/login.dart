@@ -12,7 +12,7 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 130, 130, 255),
+      backgroundColor: Color.fromARGB(255, 1, 39, 70),
       body: Center(
         child: Container(
           height: 400,
@@ -74,7 +74,9 @@ class _LoggState extends State<Logg> {
               height: 20,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, '/drawer');
+              },
               child: Text("Entrar"),
             )
           ],
