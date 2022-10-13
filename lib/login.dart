@@ -75,7 +75,7 @@ class _LoggState extends State<Logg> {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/drawer');
+                Navigator.pushNamed(context, '/usuarios');
               },
               child: Text("Entrar"),
             )

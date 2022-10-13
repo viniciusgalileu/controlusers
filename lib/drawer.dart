@@ -1,23 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:web/sistemas.dart';
+import 'package:web/usuarios.dart';
 
-void main() => runApp(const MyApp());
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  static const appTitle = 'Controle usuários';
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: appTitle,
-      home: MyHomePage(title: appTitle),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key, required this.title});
+class MenuDrawer extends StatelessWidget {
+  const MenuDrawer({super.key, required this.title});
 
   final String title;
 
@@ -26,7 +12,7 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
-        backgroundColor: Color.fromARGB(255, 1, 39, 70),
+        backgroundColor: Color.fromARGB(255, 2, 101, 182),
       ),
       body: const Center(),
       drawer: Drawer(
@@ -39,10 +25,12 @@ class MyHomePage extends StatelessWidget {
           children: [
             const DrawerHeader(
               decoration: BoxDecoration(
-                color: Color.fromARGB(255, 1, 39, 70),
+                color: Color.fromARGB(255, 2, 57, 102),
               ),
+              //image: DecorationImage(
+              //  image: AssetImage("images/fundo_drawer.jpg"))),
               child: Text(
-                'Mostra aqui o nome do usuário',
+                'Controle de Usuários',
                 style: TextStyle(color: Colors.white),
               ),
             ),
@@ -51,25 +39,27 @@ class MyHomePage extends StatelessWidget {
                 Icons.person_outlined,
                 color: Color.fromARGB(255, 1, 39, 70),
               ),
-              title: const Text('Lista usuários'),
+              title: const Text('Usuários'),
               onTap: () {
                 // Update the state of the app
                 // ...
                 // Then close the drawer
-                Navigator.pop(context);
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: ((context) => const Usuarios())));
               },
             ),
             ListTile(
               leading: const Icon(
-                Icons.edit,
+                Icons.edit_note,
                 color: Color.fromARGB(255, 1, 39, 70),
               ),
-              title: const Text('cadastro'),
+              title: const Text('Sistemas'),
               onTap: () {
                 // Update the state of the app
                 // ...
-                // Then close the drawer
-                Navigator.pop(context);
+                // Then close the drawer0
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: ((context) => const Sistemas())));
               },
             ),
           ],
