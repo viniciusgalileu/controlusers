@@ -47,6 +47,10 @@ class MyHomePage extends StatelessWidget {
               ),
             ),
             ListTile(
+              leading: const Icon(
+                Icons.person_outlined,
+                color: Color.fromARGB(255, 1, 39, 70),
+              ),
               title: const Text('Lista usuários'),
               onTap: () {
                 // Update the state of the app
@@ -56,6 +60,10 @@ class MyHomePage extends StatelessWidget {
               },
             ),
             ListTile(
+              leading: const Icon(
+                Icons.edit,
+                color: Color.fromARGB(255, 1, 39, 70),
+              ),
               title: const Text('cadastro'),
               onTap: () {
                 // Update the state of the app
