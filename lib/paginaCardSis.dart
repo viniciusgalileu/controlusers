@@ -5,7 +5,7 @@ void main() => runApp(const PgCardSis());
 class PgCardSis extends StatelessWidget {
   const PgCardSis({super.key});
 
-  static const String _title = 'Flutter Code Sample';
+  static const String _title = 'Informação do Sistema';
 
   @override
   Widget build(BuildContext context) {
