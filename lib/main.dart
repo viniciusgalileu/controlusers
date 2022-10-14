@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:web/CadSis.dart';
 import 'package:web/PaginaCardSis.dart';
 import 'package:web/paginaCardUser.dart';
+import 'package:web/testeweb.dart';
 import 'package:web/userscad.dart';
 import 'package:web/usuarios.dart';
 
@@ -13,14 +14,15 @@ void main(List<String> args) {
   runApp(
     MaterialApp(
       //color: Color.fromARGB(255, 138, 183, 221),
-      initialRoute: '/login',
+      initialRoute: '/testeweb',
       routes: {
         '/login': ((context) => Login()),
         '/usuarios': ((context) => Usuarios()),
         '/caduser': (context) => CadUser(),
         '/cadsis': (context) => CadSis(),
-        '/pgcarduser': (context) => PgCardUser(),
+        '/pgcarduser': (context) => PgCarduser(),
         '/pgcardsis': (context) => PgCardSis(),
+        '/testeweb': (context) => Testeweb(),
       },
     ),
   );

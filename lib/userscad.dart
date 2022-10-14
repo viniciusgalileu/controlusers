@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:web/userscad.dart';
 
 import 'drawer.dart';
 
@@ -17,7 +16,7 @@ class _CadUserState extends State<CadUser> {
       home: Scaffold(
         body: Center(
           child: Container(
-              child: MenuDrawer(
+              child: const MenuDrawer(
             title: "Cadastrar usuários",
           )),
         ),
