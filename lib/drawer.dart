@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:web/CadSis.dart';
 import 'package:web/sistemas.dart';
+import 'package:web/userscad.dart';
 import 'package:web/usuarios.dart';
 
 class MenuDrawer extends StatelessWidget {
@@ -36,7 +38,7 @@ class MenuDrawer extends StatelessWidget {
             ),
             ListTile(
               leading: const Icon(
-                Icons.person_outlined,
+                Icons.person,
                 color: Color.fromARGB(255, 1, 39, 70),
               ),
               title: const Text('Usuários'),
@@ -50,7 +52,21 @@ class MenuDrawer extends StatelessWidget {
             ),
             ListTile(
               leading: const Icon(
-                Icons.edit_note,
+                Icons.person_add,
+                color: Color.fromARGB(255, 1, 39, 70),
+              ),
+              title: const Text('Cadastrar usuários'),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer0
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: ((context) => const CadUser())));
+              },
+            ),
+            ListTile(
+              leading: const Icon(
+                Icons.notes,
                 color: Color.fromARGB(255, 1, 39, 70),
               ),
               title: const Text('Sistemas'),
@@ -60,6 +76,20 @@ class MenuDrawer extends StatelessWidget {
                 // Then close the drawer0
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: ((context) => const Sistemas())));
+              },
+            ),
+            ListTile(
+              leading: const Icon(
+                Icons.playlist_add,
+                color: Color.fromARGB(255, 1, 39, 70),
+              ),
+              title: const Text('Cadastrar Sistemas'),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer0
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: ((context) => const CadSis())));
               },
             ),
           ],

@@ -1,17 +1,28 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:web/userscad.dart';
 
-class User {
-  final String id;
-  final String nome;
-  final String setor;
-  final String sistemas;
-  final String emails;
+import 'drawer.dart';
 
-  const User({
-    required this.id,
-    required this.nome,
-    required this.emails,
-    required this.sistemas,
-    required this.setor,
-  });
+class CadUser extends StatefulWidget {
+  const CadUser({super.key});
+
+  @override
+  State<CadUser> createState() => _CadUserState();
+}
+
+class _CadUserState extends State<CadUser> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Container(
+              child: MenuDrawer(
+            title: "Cadastrar usuários",
+          )),
+        ),
+      ),
+    );
+    //body: MenuDrawer(title: appTitle),
+  }
 }

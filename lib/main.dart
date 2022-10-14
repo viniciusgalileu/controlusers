@@ -1,6 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:web/CadSis.dart';
+import 'package:web/userscad.dart';
 import 'package:web/usuarios.dart';
 
 import 'login.dart';
@@ -13,6 +15,8 @@ void main(List<String> args) {
       routes: {
         '/login': ((context) => Login()),
         '/usuarios': ((context) => Usuarios()),
+        '/caduser': (context) => CadUser(),
+        '/cadsis': (context) => CadSis(),
       },
     ),
   );

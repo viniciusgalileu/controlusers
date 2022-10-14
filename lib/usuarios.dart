@@ -1,21 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:web/userscad.dart';
 
 import 'drawer.dart';
 
-void main() => runApp(const Usuarios());
-
-class Usuarios extends StatelessWidget {
+class Usuarios extends StatefulWidget {
   const Usuarios({super.key});
 
-  static const appTitle = 'Usuários';
+  @override
+  State<Usuarios> createState() => _UsuariosState();
+}
 
+class _UsuariosState extends State<Usuarios> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: appTitle,
+    return MaterialApp(
       home: Scaffold(
-        body: MenuDrawer(title: appTitle),
+        body: Center(
+          child: Container(
+              child: MenuDrawer(
+            title: "Usuários",
+          )),
+        ),
       ),
     );
+    //body: MenuDrawer(title: appTitle),
   }
 }
