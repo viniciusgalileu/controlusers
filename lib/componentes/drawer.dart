@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:web/CadSis.dart';
-import 'package:web/sistemas.dart';
-import 'package:web/userscad.dart';
-import 'package:web/usuarios.dart';
+import 'package:web/cadastros/CadSis.dart';
+import 'package:web/paginas/sistemas.dart';
+import 'package:web/cadastros/CadUser.dart';
+import 'package:web/paginas/usuarios.dart';
 
 class MenuDrawer extends StatelessWidget {
   const MenuDrawer({super.key, required this.title});

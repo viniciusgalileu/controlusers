@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:web/userscad.dart';
+import 'package:web/cadastros/CadUser.dart';
 
-import 'drawer.dart';
+import '../componentes/drawer.dart';
 
 class Usuarios extends StatefulWidget {
   const Usuarios({super.key});

@@ -31,7 +31,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  webview_flutter: 2.0.12
+  mysql1: ^0.20.0
+  http: ^0.13.5
   
    
   # The following adds the Cupertino Icons font to your application.
