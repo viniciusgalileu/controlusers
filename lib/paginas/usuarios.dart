@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:web/cadastros/CadUser.dart';
+import 'package:web/componentes/Colab_list.dart';
 
 import '../componentes/drawer.dart';
 
@@ -10,19 +11,14 @@ class Usuarios extends StatefulWidget {
   State<Usuarios> createState() => _UsuariosState();
 }
 
+const appTitle = 'Lista Colaboradores';
+
 class _UsuariosState extends State<Usuarios> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Container(
-              child: MenuDrawer(
-            title: "Usuários",
-          )),
-        ),
-      ),
+    return Scaffold(
+      // body: MenuDrawer(title: appTitle,),
+      body: Colab_list(),
     );
-    //body: MenuDrawer(title: appTitle),
   }
 }
