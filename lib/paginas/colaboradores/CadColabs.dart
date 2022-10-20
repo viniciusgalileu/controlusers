@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-import '../componentes/menudraw.dart';
+import '../../componentes/menudraw.dart';
 
-class PgCarduser extends StatefulWidget {
-  const PgCarduser({super.key});
+class CadColab extends StatefulWidget {
+  const CadColab({super.key});
 
   @override
-  State<PgCarduser> createState() => _PgCarduserState();
+  State<CadColab> createState() => _CadColabState();
 }
 
-class _PgCarduserState extends State<PgCarduser> {
+class _CadColabState extends State<CadColab> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,7 +21,7 @@ class _PgCarduserState extends State<PgCarduser> {
           backgroundColor: Color.fromARGB(255, 2, 57, 102),
         ),
         drawer: MenuDraw(),
-        body: Text('página de cadastro Colaborador '),
+        body: Text('página de cadastro Colaborador'),
       ),
     );
   }

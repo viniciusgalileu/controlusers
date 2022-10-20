@@ -1,23 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:web/componentes/menudraw.dart';
 
-void main() => runApp(const Sistemas());
+class ShowColab extends StatefulWidget {
+  const ShowColab({super.key});
 
-class Sistemas extends StatelessWidget {
-  const Sistemas({super.key});
+  @override
+  State<ShowColab> createState() => _ShowColabState();
+}
 
-  static const appTitle = 'Sistemas';
-
+class _ShowColabState extends State<ShowColab> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Lista sistemas cadastrados'),
+          title: Text('Dados Colaborador'),
           backgroundColor: Color.fromARGB(255, 2, 57, 102),
         ),
         drawer: MenuDraw(),
-        body: Text('Lista de sistemas aqui '),
+        body: Text('Dados Colaborador'),
       ),
     );
   }

@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:web/componentes/Colab_list.dart';
 import 'package:web/componentes/menudraw.dart';
 
-class Usuarios extends StatefulWidget {
-  const Usuarios({super.key});
+class Colaboradores extends StatefulWidget {
+  const Colaboradores({super.key});
 
   @override
-  State<Usuarios> createState() => _UsuariosState();
+  State<Colaboradores> createState() => _ColaboradoresState();
 }
 
-class _UsuariosState extends State<Usuarios> {
+class _ColaboradoresState extends State<Colaboradores> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

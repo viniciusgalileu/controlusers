@@ -1,12 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:web/paginas/CadSetores.dart';
-import 'package:web/paginas/paginaCardSis.dart';
-import 'package:web/paginas/paginaCardUser.dart';
-import 'package:web/paginas/setores.dart';
-import 'package:web/paginas/usuarios.dart';
-import 'cadastros/CadSis.dart';
-import 'cadastros/CadUser.dart';
-import 'paginas/login.dart';
+import 'package:web/paginas/colaboradores/Colaboradores.dart';
+import 'paginas/Login/login.dart';
 
 void main(List<String> args) {
   runApp(
@@ -14,14 +8,8 @@ void main(List<String> args) {
       //color: Color.fromARGB(255, 138, 183, 221),
       initialRoute: '/login',
       routes: {
-        '/login': ((context) => Login()),
-        '/usuarios': ((context) => Usuarios()),
-        '/caduser': (context) => CadUser(),
-        '/cadsis': (context) => CadSis(),
-        '/pgcarduser': (context) => PgCarduser(),
-        '/pgcardsis': (context) => PgCardSis(),
-        '/setores': (context) => Setores(),
-        '/Cadsetores': (context) => CadSetores(),
+        '/login': ((context) => const Login()),
+        '/colabs': (context) => const Colaboradores(),
       },
     ),
   );

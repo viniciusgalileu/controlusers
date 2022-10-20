@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:web/paginas/colaboradores/CadColabs.dart';
+import 'package:web/paginas/sistemas/CadSistema.dart';
 
-import '../cadastros/CadSis.dart';
-import '../cadastros/CadUser.dart';
-import '../paginas/CadSetores.dart';
-import '../paginas/setores.dart';
-import '../paginas/sistemas.dart';
-import '../paginas/usuarios.dart';
+import '../paginas/sistemas/ShowSis.dart';
+import '../paginas/colaboradores/ShowColab.dart';
+import '../paginas/setores/CadSetores.dart';
+import '../paginas/setores/setores.dart';
+import '../paginas/sistemas/sistemas.dart';
+import '../paginas/colaboradores/Colaboradores.dart';
 
 class MenuDraw extends StatefulWidget {
   const MenuDraw({super.key});
@@ -43,13 +45,13 @@ class _MenuDrawState extends State<MenuDraw> {
               Icons.person,
               color: Color.fromARGB(255, 1, 39, 70),
             ),
-            title: const Text('Usuários'),
+            title: const Text('Colaboradores'),
             onTap: () {
               // Update the state of the app
               // ...
               // Then close the drawer
-              Navigator.of(context).push(
-                  MaterialPageRoute(builder: ((context) => const Usuarios())));
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: ((context) => const Colaboradores())));
             },
           ),
           ListTile(
@@ -57,13 +59,13 @@ class _MenuDrawState extends State<MenuDraw> {
               Icons.person_add,
               color: Color.fromARGB(255, 1, 39, 70),
             ),
-            title: const Text('Cadastrar usuários'),
+            title: const Text('Cadastrar colaborador'),
             onTap: () {
               // Update the state of the app
               // ...
               // Then close the drawer0
               Navigator.of(context).push(
-                  MaterialPageRoute(builder: ((context) => const CadUser())));
+                  MaterialPageRoute(builder: ((context) => const CadColab())));
             },
           ),
           ListTile(

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:web/componentes/drawer.dart';
+
+import '../../componentes/menudraw.dart';
 
 class CadSis extends StatefulWidget {
   const CadSis({super.key});
@@ -15,7 +16,12 @@ class _CadSisState extends State<CadSis> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: MenuDrawer(title: 'Cadastrar Sistemas'),
+        appBar: AppBar(
+          title: Text('Cadastrar Sistemas'),
+          backgroundColor: Color.fromARGB(255, 2, 57, 102),
+        ),
+        drawer: MenuDraw(),
+        body: Text('página de cadastro de Sistemas '),
       ),
     );
   }
