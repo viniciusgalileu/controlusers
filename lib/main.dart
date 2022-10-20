@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:web/paginas/CadSetores.dart';
 import 'package:web/paginas/paginaCardSis.dart';
 import 'package:web/paginas/paginaCardUser.dart';
+import 'package:web/paginas/setores.dart';
 import 'package:web/paginas/usuarios.dart';
 import 'cadastros/CadSis.dart';
 import 'cadastros/CadUser.dart';
@@ -18,6 +20,8 @@ void main(List<String> args) {
         '/cadsis': (context) => CadSis(),
         '/pgcarduser': (context) => PgCarduser(),
         '/pgcardsis': (context) => PgCardSis(),
+        '/setores': (context) => Setores(),
+        '/Cadsetores': (context) => CadSetores(),
       },
     ),
   );

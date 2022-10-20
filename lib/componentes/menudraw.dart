@@ -4,6 +4,8 @@ import 'package:flutter/src/widgets/framework.dart';
 
 import '../cadastros/CadSis.dart';
 import '../cadastros/CadUser.dart';
+import '../paginas/CadSetores.dart';
+import '../paginas/setores.dart';
 import '../paginas/sistemas.dart';
 import '../paginas/usuarios.dart';
 
@@ -90,6 +92,34 @@ class _MenuDrawState extends State<MenuDraw> {
               // Then close the drawer0
               Navigator.of(context).push(
                   MaterialPageRoute(builder: ((context) => const CadSis())));
+            },
+          ),
+          ListTile(
+            leading: const Icon(
+              Icons.description,
+              color: Color.fromARGB(255, 1, 39, 70),
+            ),
+            title: const Text('Setores'),
+            onTap: () {
+              // Update the state of the app
+              // ...
+              // Then close the drawer0
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: ((context) => const Setores())));
+            },
+          ),
+          ListTile(
+            leading: const Icon(
+              Icons.note_add,
+              color: Color.fromARGB(255, 1, 39, 70),
+            ),
+            title: const Text('Cadsatro Setores'),
+            onTap: () {
+              // Update the state of the app
+              // ...
+              // Then close the drawer0
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: ((context) => const CadSetores())));
             },
           ),
         ],
