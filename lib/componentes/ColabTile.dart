@@ -9,7 +9,11 @@ class ColabTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: CircleAvatar(child: Icon(Icons.person)),
+      leading: CircleAvatar(
+          child: Icon(
+        Icons.person,
+        color: Color.fromARGB(255, 2, 57, 102),
+      )),
       title: Text(colabs.name),
       subtitle: Text(colabs.email),
       trailing: Container(

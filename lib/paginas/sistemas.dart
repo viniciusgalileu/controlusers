@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../componentes/drawer.dart';
+import 'package:web/componentes/menudraw.dart';
 
 void main() => runApp(const Sistemas());
 
@@ -10,9 +10,15 @@ class Sistemas extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: appTitle,
-      home: MenuDrawer(title: appTitle),
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Lista sistemas cadastrados'),
+          backgroundColor: Color.fromARGB(255, 2, 57, 102),
+        ),
+        drawer: MenuDraw(),
+        body: Text('Lista de sistemas aqui '),
+      ),
     );
   }
 }
