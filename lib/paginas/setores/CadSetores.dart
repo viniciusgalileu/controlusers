@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:web/componentes/Colab_list.dart';
+import 'package:web/componentes/actionbar.dart';
 import 'package:web/componentes/menudraw.dart';
 
 class CadSetores extends StatefulWidget {
@@ -14,6 +15,7 @@ class _CadSetoresState extends State<CadSetores> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: [ActionBar()],
         title: Text('Cadastro Setores'),
         backgroundColor: Color.fromARGB(255, 2, 57, 102),
       ),

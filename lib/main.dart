@@ -5,6 +5,7 @@ import 'paginas/Login/login.dart';
 void main(List<String> args) {
   runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       //color: Color.fromARGB(255, 138, 183, 221),
       initialRoute: '/login',
       routes: {

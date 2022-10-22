@@ -1,24 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:web/componentes/Colab_list.dart';
 import 'package:web/componentes/actionbar.dart';
 import 'package:web/componentes/menudraw.dart';
 
-class CadDomin extends StatefulWidget {
-  const CadDomin({super.key});
+class ShowSetores extends StatefulWidget {
+  const ShowSetores({super.key});
 
   @override
-  State<CadDomin> createState() => _CadDominState();
+  State<ShowSetores> createState() => _ShowSetoresState();
 }
 
-class _CadDominState extends State<CadDomin> {
+class _ShowSetoresState extends State<ShowSetores> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         actions: [ActionBar()],
-        title: Text('Cadstrar Domínios'),
+        title: Text('informações Setores'),
         backgroundColor: Color.fromARGB(255, 2, 57, 102),
       ),
       drawer: MenuDraw(),
+      body: Text("informações Setores"),
     );
   }
 }

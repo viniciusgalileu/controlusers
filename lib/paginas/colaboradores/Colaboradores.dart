@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:web/componentes/Colab_list.dart';
+import 'package:web/componentes/actionbar.dart';
 import 'package:web/componentes/menudraw.dart';
 
 class Colaboradores extends StatefulWidget {
@@ -15,6 +16,7 @@ class _ColaboradoresState extends State<Colaboradores> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Lista Usuários'),
+        actions: [ActionBar()],
         backgroundColor: Color.fromARGB(255, 2, 57, 102),
       ),
       drawer: MenuDraw(),

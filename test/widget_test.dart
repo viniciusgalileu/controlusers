@@ -12,7 +12,7 @@ import 'package:web/paginas/colaboradores/Colaboradores.dart';
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const Usuarios());
+    await tester.pumpWidget(const Colaboradores());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);

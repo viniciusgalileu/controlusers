@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
+import '../../componentes/actionbar.dart';
 import '../../componentes/menudraw.dart';
 
 class CadSis extends StatefulWidget {
@@ -15,8 +16,10 @@ class _CadSisState extends State<CadSis> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
+          actions: [ActionBar()],
           title: Text('Cadastrar Sistemas'),
           backgroundColor: Color.fromARGB(255, 2, 57, 102),
         ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:web/componentes/actionbar.dart';
 import 'package:web/componentes/menudraw.dart';
 
 class ShowDomin extends StatefulWidget {
@@ -13,6 +14,7 @@ class _ShowDominState extends State<ShowDomin> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: [ActionBar()],
         title: Text(' informações Domínios'),
         backgroundColor: Color.fromARGB(255, 2, 57, 102),
       ),
