@@ -2,7 +2,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 import 'package:flutter/material.dart';
-import 'package:web/componentes/ColabTile.dart';
+import 'package:web/paginas/colaboradores/ColabTile.dart';
 import 'package:web/componentes/classes.dart';
 import 'package:web/componentes/dummy.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:web/componentes/Colab_list.dart';
+import 'package:web/paginas/colaboradores/Colab_list.dart';
 import 'package:web/componentes/actionbar.dart';
 import 'package:web/componentes/menudraw.dart';
 

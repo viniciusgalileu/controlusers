@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:web/componentes/classes.dart';
+import 'package:web/paginas/colaboradores/ShowColab.dart';
 
 class ColabTile extends StatelessWidget {
   final Colabs colabs;
@@ -21,7 +22,10 @@ class ColabTile extends StatelessWidget {
         child: Row(
           children: [
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: ((context) => const ShowColab())));
+              },
               icon: Icon(Icons.edit),
               color: Color.fromARGB(255, 20, 67, 223),
             ),

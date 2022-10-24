@@ -31,9 +31,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  mysql1: ^0.20.0
   http: ^0.13.5
-  provider:
+  get: ^4.6.5
+ 
+
+  
   
    
   # The following adds the Cupertino Icons font to your application.
